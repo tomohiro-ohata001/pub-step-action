@@ -10,5 +10,9 @@ jobs:
       uses: tomohiro-ohata001/hello-world-composite-run-steps-action@v1
       with:
         who-to-greet: 'Mona the Octocat'
+    - name: test01
+      run: |
+        ls -la
+        pwd
     - run: echo random-number ${{ steps.foo.outputs.random-number }}
       shell: bash
