@@ -10,6 +10,7 @@ jobs:
       run: |
         ls -la
         pwd
+        echo ${{ github.action_path }}
     - id: foo
       uses: tomohiro-ohata001/hello-world-composite-run-steps-action@v1
       with:
